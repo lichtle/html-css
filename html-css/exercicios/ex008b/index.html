@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="little-rat.ico" type="image/x-icon" />
+    <title>Outras Formatações</title>
+</head>
+
+<body>
+    <h1>Outras Formatações</h1>
+    <h2>Código-fonte (partes de código) / Pré-formatação</h2>
+    <p>
+        O comando <code>document.getElementById('teste')</code> é escrito em
+        linguagem JavaScript.
+    </p>
+    <p>Usamos a tag <code>&lt;code&gt;</code> para monoespaçar a fonte (deixar todos os caracteres ocupando o mesmo
+        espaço). Vejamos
+        o próximo exemplo:</p>
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num % 2 == 0:
+        print (f'O número {num} é PAR')
+    else:
+        print (f'O número {num} é ÍMPAR')
+    print('Fim do programa')
+        </code>
+    </pre>
+    <p>
+        Acima utilizamos a tag <code>&lt;pre&gt;</code> envelopando a tag <code>&lt;code&gt;</code> para manter o texto
+        pré-formatado, exatamente da mesma maneira na qual ele foi digitado, incluindo quebras de linhas, espaços e
+        tabulações.
+    </p>
+    <p>
+        Caso a tag <code>&lt;pre&gt;</code> não seja utilizada, o código aparecerá em formato de frase, e a linha só
+        será
+        quebrada ao antigir o limite da tela. Isso faz com que o código possa ser visualizado da maneira que está
+        escrito no editor.
+    </p>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q>.</p>
+    <p>No exemplo acima utilizamos a tag <code>&lt;q&gt;</code> para fazer uma citação. A tag <code>&lt;q&gt;</code>
+        adiciona aspas e
+        semântica à
+        frase</p>
+    <h2>Citações completas</h2>
+    <p>Segundo Fulano de Tal:</p>
+    <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia provident quo officiis illo magnam id,
+        dolorem repellendus magni laboriosam itaque vel, ducimus, non sint ipsam enim iusto atque doloremque iure.
+    </blockquote>
+    <p>No exemplo acima utilizamos a tag <code>&lt;blockquote&gt;</code> para fazer uma citação maior, como por exemplo
+        um parágrafo de um livro. Além disso, ela proporciona semântica à frase. A tag <code>&lt;blockquote&gt;</code>
+        por padrão adiciona uma margem à esquerda da página.
+        Também devemos utilizar
+        o parâmetro <code>cite=""</code> dentro da tag para adicionar a fonte da citação.</p>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr
+            title="Cascading Style Sheets">CSS</abbr>. Estou adorando! :3</p>
+    <p>No exemplo acima utilizamos a tag <code>&lt;abbr&gt;</code> para indicar que determinado texto é uma abreviação.
+        O parâmetro <code>title=""</code> é adicionado pelo Emmet e nele devemos indicar o que significa aquela sigla.
+        Ao passar o mouse por cima do texto com a tag <code>&lt;abbr&gt;</code>, seu significado aparece</p>
+</body>
+
+</html>
